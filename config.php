@@ -4,7 +4,7 @@ define('DB_HOST', 'localhost');
 define('DB_PORT', '5432');
 define('DB_NAME', 'makki_shop');
 define('DB_USER', 'postgres');
-define('DB_PASS', '94508443r');
+define('DB_PASS', 'Sekiro11!');
 
 function getDbConnection() {
     $connection_string = sprintf(
