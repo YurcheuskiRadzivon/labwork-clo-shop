@@ -59,7 +59,6 @@ function displayCart() {
         const cartItem = document.createElement('div');
         cartItem.className = 'cart-item';
         cartItem.innerHTML = `
-            <div class="cart-item-image"></div>
             <div class="cart-item-info">
                 <h3>${item.name}</h3>
                 <p class="cart-item-details">${item.size}, ${item.color}</p>

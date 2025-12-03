@@ -75,7 +75,7 @@ include '../includes/header.php';
 
                 <div class="form-group">
                     <label for="phone">Номер телефона *</label>
-                    <input type="tel" id="phone" name="phone" placeholder="+375 29 123-45-67" required>
+                    <input type="tel" id="phone" name="phone" placeholder="+3751234567" pattern="^\+375((29|33|44|25)\d{7})$" required />
                 </div>
 
                 <div class="form-group">

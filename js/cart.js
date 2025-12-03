@@ -1,4 +1,4 @@
-// Добавление товара в корзину
+// Добавление товара 
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.add-to-cart').forEach(button => {
         button.addEventListener('click', function() {
@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+//add to cart from local storage
 function addToCart(product, buttonElement) {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
@@ -47,6 +48,7 @@ function addToCart(product, buttonElement) {
     showNotification('Товар добавлен в корзину!');
 }
 
+// css for notification
 function showNotification(message) {
     const notification = document.createElement('div');
     notification.textContent = message;

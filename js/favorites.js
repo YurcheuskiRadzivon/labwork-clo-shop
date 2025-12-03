@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// сердечко загорается либо тухнет в каталоге или главном при нажатии
 function toggleFavorite(product, buttonElement) {
     let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
@@ -36,6 +37,7 @@ function toggleFavorite(product, buttonElement) {
     localStorage.setItem('favorites', JSON.stringify(favorites));
 }
 
+//установка состояния сердечек при загрузке страницы 
 function updateFavoriteButtons() {
     const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 

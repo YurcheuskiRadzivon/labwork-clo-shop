@@ -1,9 +1,9 @@
+
 <?php
 require_once '../config.php';
 $page_title = 'Доставка и оплата';
 include '../includes/header.php';
 ?>
-
 <div class="container">
     <h1>Доставка и оплата</h1>
 
